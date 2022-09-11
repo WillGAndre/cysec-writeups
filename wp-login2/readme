@@ -1,0 +1,15 @@
+> pip install -r requirements.txt
+
+usage: main.py [-h] [-p PAYLOAD_SIZE] [-u USERNAME] [-ps PASSWORD_PATH] [--url URL] [--redirect REDIRECT] [-t | --threads | --no-threads]
+
+options:
+  -h, --help            show this help message and exit
+  -p PAYLOAD_SIZE, --size PAYLOAD_SIZE
+                        2
+  -u USERNAME, --username USERNAME
+                        admin
+  -ps PASSWORD_PATH, --password PASSWORD_PATH
+                        passwd/
+  --url URL             /wp-login.php
+  --redirect REDIRECT   /wp-admin
+  -t, --threads, --no-threads

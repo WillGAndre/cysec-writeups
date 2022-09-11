@@ -1,0 +1,29 @@
+Assignments provided by the Brainnest Cyber Security Industry Training program.
+Each folder has its own writeup, either in pdf or ipynb. Notice that some challenges
+have multiple ways of being completed.
+
+Assignment 1:
+    picoCTF 2022 - Enhance! + File Types
+
+Assignment 2:
+    picoCTF 2022 - basic-mod2
+    H4K1NG Challenge: Submit name in admin page (password was not given).
+
+Assignment 3:
+    picoCTF 2022 - file-run1 + file-run2
+    WordPress Login Brute Force Challenge: Two usernames were given, the challenge was to discover the password (for each user) from a given password list.
+
+Assignment 4:
+    picoCTF 2022 - Forbidden Paths + Roboto Sans + Fresh Java
+    Bonus: Crack password from findMeV4.pdf (zip file with py exec)
+
+    ----
+
+Custom tools:
+    /ipv4-sweeper
+        \
+         - IPv4/24 subnet scanner
+
+    /wp-login2
+        \
+         - WordPress Login brute forcer used in assig-3.
