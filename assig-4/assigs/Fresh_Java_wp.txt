@@ -1,0 +1,5 @@
+1) Using ghidra, mainly the decompile section
+
+    Key can be found in the main function:
+
+        picoCTF{700l1ng_r3qu1r3d_738cac89}

