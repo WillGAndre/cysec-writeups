@@ -1,0 +1,181 @@
+    -> (https://wpscan.com/wordpress-security-scanner)
+
+wpscan --url https://rs11.glorifykickstarter.com/
+
+                (....)
+
+[+] robots.txt found: https://rs11.glorifykickstarter.com/robots.txt
+ | Interesting Entries:
+ |  - /wp-admin/
+ |  - /wp-admin/admin-ajax.php
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%  
+
+                (....)
+
+   > By accessing robots.txt, sitemap can be reached. Within the sitemap, name submit form can easily be found. 
+
+------
+
+nmap -v -A -sV 192.254.234.32
+
+Discovered open port 21/tcp on 192.254.234.32
+Discovered open port 995/tcp on 192.254.234.32
+Discovered open port 993/tcp on 192.254.234.32
+Discovered open port 25/tcp on 192.254.234.32
+Discovered open port 143/tcp on 192.254.234.32
+Discovered open port 22/tcp on 192.254.234.32
+Discovered open port 3306/tcp on 192.254.234.32
+Discovered open port 53/tcp on 192.254.234.32
+Discovered open port 443/tcp on 192.254.234.32
+Discovered open port 110/tcp on 192.254.234.32
+Discovered open port 587/tcp on 192.254.234.32
+Discovered open port 80/tcp on 192.254.234.32
+Discovered open port 465/tcp on 192.254.234.32
+Discovered open port 26/tcp on 192.254.234.32
+
+PORT     STATE    SERVICE     VERSION
+21/tcp   open     ftp         Pure-FTPd
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+|_ssl-date: 2022-08-18T11:24:24+00:00; 0s from scanner time.
+22/tcp   open     ssh         OpenSSH 5.3 (protocol 2.0)
+| ssh-hostkey:
+|   1024 49:5e:20:25:de:ee:c2:88:9e:e6:fb:88:8f:4a:98:59 (DSA)
+|_  2048 aa:25:d0:44:d7:24:94:92:fa:cf:a2:b5:14:81:0d:d2 (RSA)
+25/tcp   open     smtp        Exim smtpd 4.95
+| smtp-commands: gator3245.hostgator.com Hello a213-22-156-11.cpe.netcabo.pt [213.22.156.11], SIZE 52428800, 8BITMIME, PIPELINING, PIPE_CONNECT, AUTH PLAIN LOGIN, STARTTLS, HELP
+|_ Commands supported: AUTH STARTTLS HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+26/tcp   open     smtp        Exim smtpd 4.95
+|_ssl-date: 2022-08-18T11:24:15+00:00; 0s from scanner time.
+|_smtp-commands: Couldn't establish connection on port 26
+53/tcp   open     domain      ISC BIND 9.8.2rc1 (RedHat Enterprise Linux 6)
+| dns-nsid:
+|_  bind.version: 9.8.2rc1-RedHat-9.8.2-0.68.rc1.el6_10.3
+80/tcp   open     http        Apache httpd
+|_http-server-header: Apache
+| http-methods:
+|_  Supported Methods: GET HEAD POST OPTIONS
+| http-robots.txt: 1 disallowed entry
+|_/
+110/tcp  open     pop3        Dovecot pop3d
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+|_ssl-date: 2022-08-18T11:24:15+00:00; 0s from scanner time.
+|_pop3-capabilities: RESP-CODES USER STLS UIDL AUTH-RESP-CODE TOP SASL(PLAIN LOGIN) PIPELINING CAPA
+143/tcp  open     imap        Dovecot imapd
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+|_imap-capabilities: STARTTLS Pre-login post-login IMAP4rev1 NAMESPACE have IDLE ID ENABLE AUTH=LOGINA0001 capabilities listed LITERAL+ SASL-IR AUTH=PLAIN LOGIN-REFERRALS more OK
+|_ssl-date: 2022-08-18T11:24:24+00:00; 0s from scanner time.
+443/tcp  open     ssl/http    Apache httpd
+|_ssl-date: TLS randomness does not represent time
+| http-robots.txt: 1 disallowed entry
+|_/
+|_http-server-header: Apache
+| http-methods:
+|_  Supported Methods: GET HEAD POST OPTIONS
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+465/tcp  open     ssl/smtp    Exim smtpd 4.95
+|_ssl-date: 2022-08-18T11:24:13+00:00; 0s from scanner time.
+| smtp-commands: gator3245.hostgator.com Hello a213-22-156-11.cpe.netcabo.pt [213.22.156.11], SIZE 52428800, 8BITMIME, PIPELINING, PIPE_CONNECT, AUTH PLAIN LOGIN, HELP
+|_ Commands supported: AUTH HELO EHLO MAIL RCPT DATA BDAT NOOP QUIT RSET HELP
+587/tcp  open     smtp        Exim smtpd 4.95
+|_ssl-date: 2022-08-18T11:24:14+00:00; 0s from scanner time.
+|_smtp-commands: Couldn't establish connection on port 587
+993/tcp  open     ssl/imap    Dovecot imapd
+|_imap-capabilities: Pre-login post-login IMAP4rev1 NAMESPACE have IDLE ID ENABLE AUTH=LOGINA0001 capabilities listed LITERAL+ SASL-IR AUTH=PLAIN LOGIN-REFERRALS more OK
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+|_ssl-date: 2022-08-18T11:24:13+00:00; 0s from scanner time.
+995/tcp  open     ssl/pop3    Dovecot pop3d
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+|_ssl-date: 2022-08-18T11:24:14+00:00; 0s from scanner time.
+|_pop3-capabilities: PIPELINING UIDL USER AUTH-RESP-CODE TOP SASL(PLAIN LOGIN) CAPA RESP-CODES
+2222/tcp open     ssh         OpenSSH 5.3 (protocol 2.0)
+| ssh-hostkey:
+|   1024 49:5e:20:25:de:ee:c2:88:9e:e6:fb:88:8f:4a:98:59 (DSA)
+|_  2048 aa:25:d0:44:d7:24:94:92:fa:cf:a2:b5:14:81:0d:d2 (RSA)
+2525/tcp filtered ms-v-worlds
+3306/tcp open     mysql       MySQL 5.6.41-84.1
+| mysql-info:
+|   Protocol: 10
+|   Version: 5.6.41-84.1
+|   Thread ID: 61636678
+|   Capabilities flags: 65535
+|   Some Capabilities: Support41Auth, FoundRows, Speaks41ProtocolOld, LongPassword, Speaks41ProtocolNew, SupportsCompression, SupportsTransactions, SwitchToSSLAfterHandshake, LongColumnFlag, DontAllowDatabaseTableColumn, ConnectWithDatabase, InteractiveClient, ODBCClient, IgnoreSigpipes, SupportsLoadDataLocal, IgnoreSpaceBeforeParenthesis, SupportsAuthPlugins, SupportsMultipleResults, SupportsMultipleStatments
+|   Status: Autocommit
+|   Salt: [`OJgFfN7dr2A0iEYoCA
+|_  Auth Plugin Name: mysql_native_password
+|_ssl-date: 2022-08-18T11:24:16+00:00; 0s from scanner time.
+| ssl-cert: Subject: commonName=*.hostgator.com
+| Subject Alternative Name: DNS:*.hostgator.com, DNS:hostgator.com
+| Issuer: commonName=Sectigo RSA Domain Validation Secure Server CA/organizationName=Sectigo Limited/stateOrProvinceName=Greater Manchester/countryName=GB
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2021-08-31T00:00:00
+| Not valid after:  2022-08-31T23:59:59
+| MD5:   efb4 5911 f42d dc72 0426 f6b6 750f a4f1
+|_SHA-1: a77f dd14 91f0 5b64 46b1 5422 e787 d91f 7cec 0e30
+Service Info: Host: gator3245.hostgator.com; OS: Linux; CPE: cpe:/o:redhat:enterprise_linux:6

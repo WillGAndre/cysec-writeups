@@ -1,0 +1,44 @@
+H4K1NG Challenge:
+Please try to use psswrd 4ttk on this website. This website is mine and I allow you to run this only for educational purposes. DO NOT use this on any other website without permission or you can go to jail.
+
+There is a weak username, intentionally made this way. Try to see if you can figure the password out.
+
+The username is: cybersecurity
+
+
+After successfully entering the website, you will be redirected to the home page, then you can click on a button named "Go to submit page" and by doing that you will be redirected to another page where you can submit your name. Click on "Submit Your Name", upon clicking, you would be asked to put your name there and then submit. At last, you can logout and be done with this challenge.
+
+_________
+
+
+https://rs11.glorifykickstarter.com - WordPress Version 6.0.1
+
+_________
+
+wordpress reads:
+
+https://www.freecodecamp.org/news/wordpress-vulnerabilities-you-need-to-know-about-and-how-to-fix-them-497a2d8b2c3e/
+
+https://www.acunetix.com/blog/articles/exploiting-sql-injection-example/
+
+_________
+
+msfconsole:
+
+https://hackertarget.com/testing-wordpress-password-security-with-metasploit/
+
+https://github.com/rapid7/metasploit-framework/blob/master/documentation/modules/auxiliary/scanner/http/wordpress_login_enum.md
+
+
+_________
+
+password wordlist:
+
+https://www.kaggle.com/datasets/wjburns/common-password-list-rockyoutxt
+
+https://github.com/danielmiessler/SecLists/tree/master/Passwords/Default-Credentials
+
+_________
+
+python wp-login bf impl -> wp_pass.py
+  ||   MySQL bf impl    -> mysql/

