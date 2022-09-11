@@ -1,0 +1,75 @@
+1) wpscan --url http://localhost/cybersec/
+
+    XML-RPC is enabled --> http://localhost/cybersec/xmlrpc.php
+
+2) SQL is encrypted 
+
+
+-----
+
+
+https://servebolt.com/articles/xmlrpc-php/#bruteforce
+
+
+py:
+    https://stackoverflow.com/questions/2332765/what-is-the-difference-between-lock-mutex-and-semaphore/45567101#45567101
+    https://stackoverflow.com/questions/31508574/semaphores-on-python
+    
+
+------
+admin:
+$P$BpZ5/N6Fw.G4HP8ppj1HFmk8CfP.kD0:#1mama
+
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 400 (phpass)
+Hash.Target......: $P$BpZ5/N6Fw.G4HP8ppj1HFmk8CfP.kD0
+Time.Started.....: Thu Aug 25 00:56:34 2022 (4 secs)
+Time.Estimated...: Thu Aug 25 00:56:38 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../passwd/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    53370 H/s (13.38ms) @ Accel:32 Loops:256 Thr:128 Vec:1
+Speed.#2.........:   157.0 kH/s (9.82ms) @ Accel:1024 Loops:1024 Thr:64 Vec:1
+Speed.#*.........:   210.4 kH/s
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 696320/14344384 (4.85%)
+Rejected.........: 0/696320 (0.00%)
+Restore.Point....: 0/14344384 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:3072-3328
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:7168-8192
+Candidate.Engine.: Device Generator
+Candidates.#1....: apoptosis -> 281961
+Candidates.#2....: softball25 -> 20012534
+Hardware.Mon.#1..: Util:100%
+Hardware.Mon.#2..: Util:  0%
+
+think:
+$P$Bd5WotjJg060Gr1sTIChg8dq9Ufqxx1:123
+
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 400 (phpass)
+Hash.Target......: $P$Bd5WotjJg060Gr1sTIChg8dq9Ufqxx1
+Time.Started.....: Thu Aug 25 01:46:06 2022 (1 sec)
+Time.Estimated...: Thu Aug 25 01:46:07 2022 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (../passwd/rockyou.txt)
+Guess.Queue......: 1/1 (100.00%)
+Speed.#1.........:    57623 H/s (13.64ms) @ Accel:64 Loops:256 Thr:64 Vec:1
+Speed.#2.........:        0 H/s (9.81ms) @ Accel:1024 Loops:1024 Thr:64 Vec:1
+Speed.#*.........:    57623 H/s
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 28672/14344384 (0.20%)
+Rejected.........: 0/28672 (0.00%)
+Restore.Point....: 0/14344384 (0.00%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:7936-8192
+Restore.Sub.#2...: Salt:0 Amplifier:0-1 Iteration:0-1024
+Candidate.Engine.: Device Generator
+Candidates.#1....: 123456 -> softball27
+Candidates.#2....: softball25 -> 20012534
+Hardware.Mon.#1..: Util:100%
+Hardware.Mon.#2..: Util: 50%
+
+
+------

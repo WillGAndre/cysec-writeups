@@ -1,0 +1,14 @@
+-----------------------------------------------------------------------------------------------
+EASY:
+Please solve these two challenges from picoCTF2022:
+"file-run1" and "file-run2
+
+-----------------------------------------------------------------------------------------------
+HARD:
+I have designed a WordPress website. The login page has a weakness.
+There are two usernames in the website.
+Both of these usernames have a weak password.
+Your objective is to find these two usernames and their passwords.
+I will not say more in here, but for more description and hints, please download the hint in here.
+
+-----------------------------------------------------------------------------------------------
